@@ -29,3 +29,4 @@ const swiper = new Swiper('.swiper', {
 
 reuseComponent('../components/header.html', 'navbar-placeholder')
 reuseComponent('../components/footer.html', 'footer-placeholder')
+reuseComponent('../components/teachers.html', 'teacher-placeholder')

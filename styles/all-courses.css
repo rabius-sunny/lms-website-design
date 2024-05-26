@@ -1,0 +1,12 @@
+.all-courses {
+  .top {
+    font-size: 3rem;
+    @media (min-width: 992px) {
+      font-size: 4rem;
+    }
+  }
+  img {
+    width: 100%;
+    max-width: 600px;
+  }
+}
