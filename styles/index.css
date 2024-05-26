@@ -1,5 +1,6 @@
 :root {
   --primary-red: #dc3545;
+  --light-gray: #f7f7f7;
 }
 
 html {
@@ -34,6 +35,10 @@ h1 {
   @media (min-width: 767px) {
     width: auto;
   }
+}
+
+.bg-lightgray {
+  background-color: var(--light-gray);
 }
 
 .swiper-button-prev,

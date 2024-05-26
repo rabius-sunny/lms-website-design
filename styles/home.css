@@ -78,15 +78,6 @@ nav {
         background-color: royalblue;
       }
     }
-    .stars {
-      i {
-        font-size: 1.3rem;
-        color: #ffaa00;
-        &:last-child {
-          color: #a0afbf;
-        }
-      }
-    }
     img {
       width: 100%;
     }
@@ -100,6 +91,16 @@ nav {
       @media (max-width: 767px) {
         font-size: 1rem;
       }
+    }
+  }
+}
+
+.stars {
+  i {
+    font-size: 1.3rem;
+    color: #ffaa00;
+    &:last-child {
+      color: #a0afbf;
     }
   }
 }
