@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/home.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/course-details.css"
+    />
+
+    <title>কোর্স বিস্তারিত</title>
+  </head>
+
+  <body class="course-details">
+    <!-- Nav bar -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="">
+      <!-- Top section -->
+      <div style="background-color: #1c1f2c">
+        <div class="container">
+          <div class="text-white-50 py-4">
+            <a href="/">হোম</a>
+            <i class="bi bi-chevron-right"></i>
+            <span>মেডিকেল ভর্তি প্রোগ্রাম-২০২৪</span>
+            <i class="bi bi-chevron-right"></i>
+            <span>গোল ডিগার্স ৪.২৫ - সেকেন্ডটাইম ব্যাচ | ২০২৪</span>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 my-5 pb-5 pt-3 my-md-0">
+              <h6 class="text-white top">
+                গোল ডিগার্স ৪.২৫ - সেকেন্ডটাইম ব্যাচ | ২০২৪
+              </h6>
+
+              <div
+                class="d-flex flex-wrap align-items-center gap-2 gap-md-4 w-100"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-play-circle fs-4 text-success"></i>
+                  <span class="text-white-50">সর্বমোট ১৪০টি ক্লাস</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-file-earmark-text fs-4 text-primary"></i>
+                  <span class="text-white-50">৪০টি পরীক্ষা</span>
+                </div>
+                <div class="d-flex gap-2 stars align-items-center">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill text-white-50"></i>
+                  <span class="text-white-50">(২০৬টি মতামত)</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2 mt-3">
+                <img
+                  src="/assets/teacher.jpg"
+                  alt="teacher"
+                  class="teacher"
+                />
+                <h5 class="text-white">আফতাকিল হোসেইন</h5>
+              </div>
+            </div>
+            <div class="col-lg-4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video section -->
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <img
+              src="/assets/class.png"
+              alt="video thumbnail"
+              class="rounded-4"
+            />
+          </div>
+          <div class="col-lg-4">
+            <div class="rounded-3 overflow-hidden card border-2">
+              <img
+                src="/assets/course2.jpg"
+                alt="video thumbnail"
+              />
+              <div class="p-3">
+                <h1 class="my-2">৳ 400</h1>
+                <button class="btn primary-bg text-white w-100">
+                  কোর্সটি কিনুন
+                </button>
+                <div class="mt-3 mb-1">
+                  <h5>এই কোর্সে যা থাকছে</h5>
+                  <div class="d-flex flex-column">
+                    <div class="d-flex gap-2 align-items-center">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>প্রতি সপ্তাহে ৪টি লাইভ ক্লাস</span>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>ডেইলি ও সাপ্তাহিক এক্সাম</span>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>অধ্যাভিত্তিক লেকচার শিট</span>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>৩ সেট মডেল টেস্ট</span>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>১০০ এরও বেশি কুইজ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course info section -->
+    <div class="container mt-5 mt-lg-0 mt-xl-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Tab section -->
+          <ul
+            class="nav nav-tabs"
+            id="myTab"
+            role="tablist"
+          >
+            <li
+              class="nav-item"
+              role="presentation"
+            >
+              <button
+                class="nav-link active"
+                id="course-info-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#course-info"
+                type="button"
+                role="tab"
+                aria-controls="course-info"
+                aria-selected="true"
+              >
+                Course Info
+              </button>
+            </li>
+            <li
+              class="nav-item"
+              role="presentation"
+            >
+              <button
+                class="nav-link"
+                id="reviews-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#reviews"
+                type="button"
+                role="tab"
+                aria-controls="reviews"
+                aria-selected="false"
+              >
+                Reviews
+              </button>
+            </li>
+          </ul>
+          <div
+            class="tab-content"
+            id="myTabContent"
+          >
+            <div
+              class="tab-pane fade show active"
+              id="course-info"
+              role="tabpanel"
+              aria-labelledby="course-info-tab"
+            >
+              <h2 class="fw-semibold my-4">About Course</h2>
+              <div
+                class="text-container"
+                id="text-container"
+              >
+                <div
+                  class="full-text"
+                  id="full-text"
+                >
+                  যারা ডাক্তার হবার স্বপ্ন শৈশব থেকে নিজেদের মধ্যে লালন করে থাকে
+                  তাদের সেই স্বপ্নকে বাস্তবতায় রূপ দানের লক্ষ্যে সারথি হিসেবে
+                  কাজ করে যাচ্ছে মেডিলজি। তুমুল প্রতিযোগিতামূলক এই ভর্তিযুদ্ধে
+                  টিকে থাকতে একজন শিক্ষার্থীর পরিশ্রমের পাশাপাশি প্রয়োজন সঠিক
+                  দিক নির্দেশনা। এঁর সেই দিকনির্দেশনা এবং সঠিক পদ্ধতিতে মূল বই
+                  ভিত্তিক প্রস্তুতিকে গুরুত্ব দিয়ে সাজানো হয় মেডিলজি'র প্রতিটি
+                  কোর্স। তাই তো সূচনালগ্ন থেকেই মেডিলজি মেডিকেল ভর্তিচ্ছু
+                  শিক্ষার্থীদের কাছে এতোটা আপন একটি প্রতিষ্ঠান। যারা ডাক্তার
+                  হবার স্বপ্ন শৈশব থেকে নিজেদের মধ্যে লালন করে থাকে তাদের সেই
+                  স্বপ্নকে বাস্তবতায় রূপ দানের লক্ষ্যে সারথি হিসেবে কাজ করে
+                  যাচ্ছে মেডিলজি। তুমুল প্রতিযোগিতামূলক এই ভর্তিযুদ্ধে টিকে
+                  থাকতে একজন শিক্ষার্থীর পরিশ্রমের পাশাপাশি প্রয়োজন সঠিক দিক
+                  নির্দেশনা। এঁর সেই দিকনির্দেশনা এবং সঠিক পদ্ধতিতে মূল বই
+                  ভিত্তিক প্রস্তুতিকে গুরুত্ব দিয়ে সাজানো হয় মেডিলজি'র প্রতিটি
+                  কোর্স। তাই তো সূচনালগ্ন থেকেই মেডিলজি মেডিকেল ভর্তিচ্ছু
+                  শিক্ষার্থীদের কাছে এতোটা আপন একটি প্রতিষ্ঠান।
+                </div>
+              </div>
+              <div
+                class="show-more py-4 d-flex align-items-center gap-2"
+                id="show-more"
+              >
+                Show More
+                <i class="bi bi-chevron-down"></i>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="reviews"
+              role="tabpanel"
+              aria-labelledby="reviews-tab"
+            >
+              <h2>Reviews</h2>
+              <p>Course reviews go here...</p>
+            </div>
+          </div>
+
+          <!-- Features section -->
+          <h2 class="fw-semibold mt-4">কোর্সের বৈশিষ্ট্য</h2>
+          <div
+            class="mt-2 d-flex flex-wrap column-gap-5 row-gap-1"
+            style="max-width: 572px"
+          >
+            <div class="d-flex gap-2 align-items-center">
+              <i class="bi bi-check2-circle fs-4"></i>
+              <span>কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <i class="bi bi-check2-circle fs-4"></i>
+              <span>কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <i class="bi bi-check2-circle fs-4"></i>
+              <span>কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <i class="bi bi-check2-circle fs-4"></i>
+              <span>কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <i class="bi bi-check2-circle fs-4"></i>
+              <span>কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</span>
+            </div>
+          </div>
+
+          <!-- Curriculam section -->
+          <div class="rounded-3 overflow-hidden mt-5">
+            <div class="px-4 pt-3 pb-2 bg-black text-white">
+              <h2 class="fw-semibold">কোর্স কারিকুলাম</h2>
+            </div>
+            <div
+              class="accordion accordion-flush"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <div class="d-block">
+                      <h5 class="m-0">তাপগতিবিদ্যার পর্ব ০১</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        00 hr | 29 mins | 46 s
+                      </p>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    <div class="d-block">
+                      <h5 class="m-0">তাপগতিবিদ্যার পর্ব ০১</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        00 hr | 29 mins | 46 s
+                      </p>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    <div class="d-block">
+                      <h5 class="m-0">তাপগতিবিদ্যার পর্ব ০১</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        00 hr | 29 mins | 46 s
+                      </p>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    <div class="d-block">
+                      <h5 class="m-0">তাপগতিবিদ্যার পর্ব ০১</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        00 hr | 29 mins | 46 s
+                      </p>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    <div class="d-block">
+                      <h5 class="m-0">তাপগতিবিদ্যার পর্ব ০১</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        00 hr | 29 mins | 46 s
+                      </p>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                  <div class="d-flex gap-3 p-3 course-list">
+                    <img
+                      src="/assets/course.jpg"
+                      alt="course"
+                    />
+                    <div>
+                      <h5 class="m-0">কাব্য ভাইয়ের টাইপ ভিত্তিক ম্যাথ</h5>
+                      <p class="text-black-50 m-0 mt-2 d-block">
+                        <i class="bi bi-play-circle fw-bold"></i>
+                        <span>00:29:10</span>
+                      </p>
+                    </div>
+                    <i class="bi bi-lock fs-4 ms-auto"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+
+    <!-- Addmission section -->
+    <div class="admission">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="text-white fw-semibold">যেভাবে কোর্সে নিবন্ধিত হবেন</h1>
+            <p class="text-white fw-light my-4">
+              যারা ডাক্তার হবার স্বপ্ন শৈশব থেকে নিজেদের মধ্যে লালন করে থাকে
+              তাদের সেই স্বপ্নকে বাস্তবতায় রূপ দানের লক্ষ্যে সারথি হিসেবে কাজ
+              করে যাচ্ছে মেডিলজি। তুমুল প্রতিযোগিতামূলক এই ভর্তিযুদ্ধে টিকে
+              থাকতে একজন শিক্ষার্থীর পরিশ্রমের পাশাপাশি প্রয়োজন সঠিক দিক
+              নির্দেশনা।
+            </p>
+            <div class="d-flex gap-2 align-items-center text-white fw-medium">
+              <i class="bi bi-check2-circle fs-4"></i>
+              <p class="m-0">যারা ডাক্তার হবার স্বপ্ন শৈশব থেকে</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center text-white fw-medium">
+              <i class="bi bi-check2-circle fs-4"></i>
+              <p class="m-0">
+                যারা ডাক্তার হবার স্বপ্ন শৈশব থেকে নিজেদের মধ্যে লালন রূপ দানের
+                লক্ষ্যে সারথি
+              </p>
+            </div>
+            <div class="d-flex gap-2 align-items-center text-white fw-medium">
+              <i class="bi bi-check2-circle fs-4"></i>
+              <p class="m-0">
+                যারা ডাক্তার হবার স্বপ্ন শৈশব থেকে নিজেদের মধ্যে লালন করে থাকে
+                তাদের সেই স্বপ্নকে বাস্তবতায় রূপ দানের
+              </p>
+            </div>
+            <div class="d-flex gap-2 align-items-center text-white fw-medium">
+              <i class="bi bi-check2-circle fs-4"></i>
+              <p class="m-0">
+                যারা ডাক্তার হবার স্বপ্ন শৈশব থেকে নিজেদের মধ্যে লালন করে থাকে
+                তাদের সেই স্বপ্নকে বাস্তবতায়
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bg-white p-4 rounded-3 mt-5 mt-lg-0">
+              <h3 class="fw-semibold">আমাদের সাথে যোগাযোগ</h3>
+              <p class="text-dark-50">
+                কোর্স সংক্রান্ত যেকোনো সমস্যার সম্মুখীন হলে আমাদের সাথে সরাসরি
+                যোগাযোগ করুন।
+              </p>
+              <div class="mt-5 contact">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-telephone-plus fs-4"></i>
+                  <h5>01324723301</h5>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-envelope fs-4"></i>
+                  <h5>support@bondipathshala.com.bd</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Relevent course section -->
+    <div class="courses mt-5 container-md">
+      <h1 class="text-center pt-5">মেডিকেল ভর্তি প্রোগ্রাম-২০২৪</h1>
+      <div class="hr">
+        <div class="center"></div>
+      </div>
+
+      <div class="my-5 bg-light p-4 rounded-4">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="course">
+                <div class="tag btn online">অনলাইন</div>
+                <img
+                  src="/assets/course2.jpg"
+                  alt="coures"
+                />
+                <div class="p-3 bg-white">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      src="/assets/teacher.jpg"
+                      alt="teacher"
+                      class="teacher"
+                    />
+                    <h6>আফতাকিল হোসেইন</h6>
+                  </div>
+                  <div class="mt-3">
+                    <h5>
+                      গোল ডিগার্স 4.25 সেকেন্ডটাইম পূর্ণাঙ্গ ব্যাচ | 2024 (নতুন
+                      ব্যাচ)
+                    </h5>
+                  </div>
+                  <div class="my-3">
+                    <div class="d-flex gap-2 stars align-items-center">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      (২০৬টি মতামত)
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>সর্বমোট ১৪০টি ক্লাস</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-file-earmark-text fs-4 text-primary"></i>
+                      <span>৪০টি পরীক্ষা</span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-3 d-flex align-items-center justify-content-between"
+                  >
+                    <h2>৳ 400</h2>
+                    <button class="btn primary-bg text-white">
+                      বিস্তারিত দেখো
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="course">
+                <div class="tag btn offline">অফলাইন</div>
+
+                <img
+                  src="/assets/course2.jpg"
+                  alt="coures"
+                />
+                <div class="p-3 bg-white">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      src="/assets/teacher.jpg"
+                      alt="teacher"
+                      class="teacher"
+                    />
+                    <h6>আফতাকিল হোসেইন</h6>
+                  </div>
+                  <div class="mt-3">
+                    <h5>
+                      গোল ডিগার্স 4.25 সেকেন্ডটাইম পূর্ণাঙ্গ ব্যাচ | 2024 (নতুন
+                      ব্যাচ)
+                    </h5>
+                  </div>
+                  <div class="my-3">
+                    <div class="d-flex gap-2 stars align-items-center">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      (২০৬টি মতামত)
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>সর্বমোট ১৪০টি ক্লাস</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-file-earmark-text fs-4 text-primary"></i>
+                      <span>৪০টি পরীক্ষা</span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-3 d-flex align-items-center justify-content-between"
+                  >
+                    <h2>৳ 400</h2>
+                    <button class="btn primary-bg text-white">
+                      বিস্তারিত দেখো
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="course">
+                <div class="tag btn online">অনলাইন</div>
+
+                <img
+                  src="/assets/course2.jpg"
+                  alt="coures"
+                />
+                <div class="p-3 bg-white">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      src="/assets/teacher.jpg"
+                      alt="teacher"
+                      class="teacher"
+                    />
+                    <h6>আফতাকিল হোসেইন</h6>
+                  </div>
+                  <div class="mt-3">
+                    <h5>
+                      গোল ডিগার্স 4.25 সেকেন্ডটাইম পূর্ণাঙ্গ ব্যাচ | 2024 (নতুন
+                      ব্যাচ)
+                    </h5>
+                  </div>
+                  <div class="my-3">
+                    <div class="d-flex gap-2 stars align-items-center">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      (২০৬টি মতামত)
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>সর্বমোট ১৪০টি ক্লাস</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-file-earmark-text fs-4 text-primary"></i>
+                      <span>৪০টি পরীক্ষা</span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-3 d-flex align-items-center justify-content-between"
+                  >
+                    <h2>৳ 400</h2>
+                    <button class="btn primary-bg text-white">
+                      বিস্তারিত দেখো
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="course">
+                <div class="tag btn online">অনলাইন</div>
+
+                <img
+                  src="/assets/course2.jpg"
+                  alt="coures"
+                />
+                <div class="p-3 bg-white">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      src="/assets/teacher.jpg"
+                      alt="teacher"
+                      class="teacher"
+                    />
+                    <h6>আফতাকিল হোসেইন</h6>
+                  </div>
+                  <div class="mt-3">
+                    <h5>
+                      গোল ডিগার্স 4.25 সেকেন্ডটাইম পূর্ণাঙ্গ ব্যাচ | 2024 (নতুন
+                      ব্যাচ)
+                    </h5>
+                  </div>
+                  <div class="my-3">
+                    <div class="d-flex gap-2 stars align-items-center">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      (২০৬টি মতামত)
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>সর্বমোট ১৪০টি ক্লাস</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-file-earmark-text fs-4 text-primary"></i>
+                      <span>৪০টি পরীক্ষা</span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-3 d-flex align-items-center justify-content-between"
+                  >
+                    <h2>৳ 400</h2>
+                    <button class="btn primary-bg text-white">
+                      বিস্তারিত দেখো
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="course">
+                <div class="tag btn offline">অফলাইন</div>
+
+                <img
+                  src="/assets/course2.jpg"
+                  alt="coures"
+                />
+                <div class="p-3 bg-white">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      src="/assets/teacher.jpg"
+                      alt="teacher"
+                      class="teacher"
+                    />
+                    <h6>আফতাকিল হোসেইন</h6>
+                  </div>
+                  <div class="mt-3">
+                    <h5>
+                      গোল ডিগার্স 4.25 সেকেন্ডটাইম পূর্ণাঙ্গ ব্যাচ | 2024 (নতুন
+                      ব্যাচ)
+                    </h5>
+                  </div>
+                  <div class="my-3">
+                    <div class="d-flex gap-2 stars align-items-center">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      (২০৬টি মতামত)
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-play-circle fs-4 text-success"></i>
+                      <span>সর্বমোট ১৪০টি ক্লাস</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-file-earmark-text fs-4 text-primary"></i>
+                      <span>৪০টি পরীক্ষা</span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-3 d-flex align-items-center justify-content-between"
+                  >
+                    <h2>৳ 400</h2>
+                    <button class="btn primary-bg text-white">
+                      বিস্তারিত দেখো
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev shadow">
+            <span class="c-btn"><i class="bi bi-chevron-left"></i></span>
+          </div>
+          <div class="swiper-button-next shadow">
+            <span class="c-btn"><i class="bi bi-chevron-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <div
+      class="mt-5 pt-5"
+      id="footer-placeholder"
+    ></div>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 :root {
-  --primary-red: #dc3545;
+  --primary-red: #ea2f2a;
   --light-gray: #f7f7f7;
 }
 
@@ -14,7 +14,11 @@ h1 {
 .primary-bg {
   background: var(--primary-red);
   &:hover {
+    opacity: 80%;
     background-color: var(--primary-red);
+  }
+  &:active {
+    background-color: var(--primary-red) !important;
   }
 }
 .btn-outline {
@@ -23,6 +27,7 @@ h1 {
   border: 1px var(--primary-red) solid;
   &:hover {
     border: 1px var(--primary-red) solid;
+    opacity: 80%;
   }
 }
 .primary-hover:hover {
