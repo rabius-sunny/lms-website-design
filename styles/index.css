@@ -1,6 +1,10 @@
 :root {
   --primary-red: #ea2f2a;
   --light-gray: #f7f7f7;
+  --dark-gray: #4e4e4e;
+  --success: #14cd8f;
+  --light-text: #76797f;
+  --dark-bg: #1c1e2b;
 }
 
 html {
@@ -9,6 +13,13 @@ html {
 
 h1 {
   font-weight: bold;
+}
+
+.light-text {
+  color: var(--light-text) !important;
+}
+.wide-text {
+  letter-spacing: 1px;
 }
 
 .primary-bg {
@@ -34,18 +45,18 @@ h1 {
   transition: 0.3s all ease-in-out;
   color: var(--primary-red) !important;
 }
-
 .btn-cta {
   width: 100%;
   @media (min-width: 767px) {
     width: auto;
   }
 }
-
 .bg-lightgray {
   background-color: var(--light-gray);
 }
-
+.success-text {
+  color: var(--success) !important;
+}
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
@@ -73,4 +84,19 @@ h1 {
 
 .c-btn {
   color: gray;
+}
+
+label {
+  display: block;
+  color: var(--dark-gray);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+input,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin-bottom: 1rem;
 }

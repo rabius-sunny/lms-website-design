@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/home.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/dashboard.css"
+    />
+    <title>ব্যক্তিগত তথ্য</title>
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Dashboard section -->
+
+    <div class="container-lg dashboard">
+      <div class="row">
+        <!-- TODO: responsive sidebar -->
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+          <div class="bg-lightgray rounded-3 shadow sidebar">
+            <div class="d-flex gap-3 align-items-center p-4">
+              <img
+                src="/assets/teacher.jpg"
+                alt="profile image"
+              />
+              <div>
+                <p class="text-tertiary m-0 fs-5">হ্যালো</p>
+                <h5 class="fw-semibold">আফতাখিল হোসেইন</h5>
+              </div>
+            </div>
+            <div class="d-flex flex-column list">
+              <a
+                class="bg-white border-top-0 border-bottom border-2 border-danger"
+                href="/dashboard/my-account.html"
+              >
+                <img
+                  src="/assets/sidebar/account.png"
+                  alt="sidebar actions"
+                />
+                একাউন্ট
+              </a>
+              <a href="/dashboard/my-course.html">
+                <img
+                  src="/assets/sidebar/course.png"
+                  alt="sidebar actions"
+                />
+                আমার কোর্সসমূহ
+              </a>
+              <a href="/dashboard/payment-history.html">
+                <img
+                  src="/assets/sidebar/payment.png"
+                  alt="sidebar actions"
+                />
+                পেমেন্ট ইতিহাস
+              </a>
+              <a href="/dashboard/manage-password.html">
+                <img
+                  src="/assets/sidebar/password.png"
+                  alt="sidebar actions"
+                />
+                পাসওয়ার্ড ম্যানেজমেন্ট
+              </a>
+              <a href="/dashboard/my-course.html">
+                <img
+                  src="/assets/sidebar/logout.png"
+                  alt="sidebar actions"
+                />
+                লগ আউট
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main section -->
+        <div class="col-lg-8">
+          <div class="bg-lightgray rounded-3 shadow">
+            <h2 class="fw-bold p-4 pb-1 mb-0">ব্যক্তিগত তথ্য</h2>
+            <hr />
+            <div class="p-4">
+              <div class="personal-info">
+                <img
+                  src="/assets/teacher.jpg"
+                  alt="profile image"
+                />
+                <label for="photo">
+                  <i class="bi bi-camera"></i>
+                </label>
+                <input
+                  id="photo"
+                  class="d-none"
+                  type="file"
+                  accept="image/*"
+                />
+              </div>
+              <form class="passwords">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">নাম</label>
+                    <input
+                      placeholder="আফতাকিল হোসেইন"
+                      id=""
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">সার্টিফিকেট নাম</label>
+                    <input
+                      placeholder="মোঃ আফতাকিল হোসেইন"
+                      id=""
+                    />
+                  </div>
+                </div>
+                <label for="">ঠিকানা</label>
+                <input
+                  placeholder="Shapla Chattar, College Road, Rangpur"
+                  id=""
+                />
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">জেলার নাম</label>
+
+                    <select>
+                      <option value="">জেলার নাম নির্বাচন করুন।</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">প্রতিষ্ঠানের নাম</label>
+                    <select>
+                      <option value="">প্রতিষ্ঠানের নাম নির্বাচন করুন।</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">অভিভাবকের মোবাইল নাম্বার</label>
+                    <input
+                      placeholder="01992233999"
+                      id=""
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">নিকটস্থ কুরিয়ারের ঠিকানা</label>
+                    <input
+                      placeholder="Shapla Chattar, College Road"
+                      id=""
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">ইমেইল</label>
+                    <input
+                      type="email"
+                      placeholder="support@bondipathshala.com.bd"
+                      id=""
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">মোবাইল নাম্বার</label>
+                    <input
+                      type="tel"
+                      placeholder="01223344556"
+                      id=""
+                    />
+                  </div>
+                </div>
+                <input
+                  type="submit"
+                  class="btn primary-bg text-white w-100 mt-4"
+                  value="সংরক্ষণ করুন"
+                />
+              </form>
+              <button class="btn btn-outline bg-white w-100">বাতিল</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <div
+      class="mt-5"
+      id="footer-placeholder"
+    ></div>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

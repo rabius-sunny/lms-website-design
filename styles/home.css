@@ -1,6 +1,10 @@
 nav {
   z-index: 999;
   background: white;
+  .active {
+    color: var(--primary-red);
+    font-weight: 600;
+  }
 }
 
 .nav-devider {
@@ -159,25 +163,23 @@ footer {
   a {
     display: block;
     width: 150px;
-    color: #767676;
+    color: var(--light-text);
     text-decoration: none;
-    font-size: 1.2rem;
     font-weight: 300;
     &:hover {
       text-decoration: underline;
     }
   }
-  img {
-    width: 250px;
+  .logo {
+    width: 200px;
   }
   span {
-    color: #767676;
-    font-size: 1.2rem;
+    color: var(--light-text);
   }
   .social {
     img {
-      width: 50px;
-      height: 50px;
+      width: 33px;
+      height: 33px;
     }
   }
   hr {

@@ -1,0 +1,74 @@
+.dashboard {
+  margin-top: 5rem;
+  img {
+    width: 100%;
+  }
+  .sidebar {
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      padding: 1rem 1.2rem;
+      color: black;
+      border-top: 1.5px solid lightgray;
+      &:hover {
+        background-color: white;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 0;
+        margin-right: 0.6rem;
+      }
+    }
+  }
+  .thumbnail {
+    height: 100%;
+  }
+  .teacher {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+  }
+  .personal-info {
+    position: relative;
+    margin: 1rem 0 2rem 0;
+    img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 100%;
+    }
+    label {
+      cursor: pointer;
+    }
+    i {
+      background-color: #fff;
+      border: 2px solid var(--success);
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 0.7rem 1rem;
+      border-radius: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 7rem;
+    }
+  }
+  table {
+    thead {
+      th {
+        padding: 1rem 0 1rem 0.5rem !important;
+        background: #000 !important;
+        color: white;
+      }
+    }
+    tbody {
+      td {
+        padding: 1rem 0 1rem 0.5rem !important;
+      }
+    }
+  }
+}
