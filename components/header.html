@@ -1,8 +1,8 @@
 <div
-  class="container-fluid"
+  class="container-fluid shadow-sm"
   style="height: 90px"
 >
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg pt-4 pt-lg-2">
     <div class="container-fluid">
       <a
         class="navbar-brand"
@@ -15,7 +15,8 @@
           height="40px"
       /></a>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler bg-lightgray rounded-5 p-2"
+        style="font-size: 1rem"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNavDropdown"
@@ -29,7 +30,18 @@
         class="collapse navbar-collapse"
         id="navbarNavDropdown"
       >
-        <ul class="navbar-nav ms-auto me-auto gap-4">
+        <a
+          href="/dashboard/my-account.html"
+          class="btn btn-cta primary-bg text-white my-4 d-lg-none mt-5"
+          >লগইন</a
+        >
+        <a
+          href="#"
+          class="btn btn-cta btn-outline text-white d-lg-none"
+        >
+          নতুন একাউন্ট
+        </a>
+        <ul class="navbar-nav ms-auto me-auto gap-4 px-4 px-lg-0">
           <li class="nav-item">
             <a
               class="nav-link primary-hover"
@@ -57,7 +69,7 @@
           <li class="nav-item">
             <a
               class="nav-link primary-hover"
-              href="all-courses.html"
+              href="/all-courses.html"
               id="allcourse"
               >কোর্স সমূহ</a
             >
@@ -71,10 +83,11 @@
             >
           </li>
         </ul>
+        <div class="nav-divider-horizontal"></div>
         <div class="d-lg-flex align-items-center gap-3">
-          <div class="nav-item dropdown mt-4 mt-lg-0">
+          <div class="nav-item dropdown mt-4 mt-lg-0 px-4 mb-5 mb-lg-0 px-lg-0">
             <a
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle d-flex align-items-center justify-content-between"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -105,15 +118,15 @@
               </li>
             </ul>
           </div>
-          <div class="nav-devider"></div>
+          <div class="nav-divider"></div>
           <a
             href="/dashboard/my-account.html"
-            class="btn btn-cta primary-bg text-white my-4"
+            class="btn btn-cta primary-bg text-white my-4 d-none d-lg-block"
             >লগইন</a
           >
           <a
             href="#"
-            class="btn btn-cta btn-outline text-white"
+            class="btn btn-cta btn-outline text-white d-none d-lg-block"
           >
             নতুন একাউন্ট
           </a>

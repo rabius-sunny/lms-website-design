@@ -2,16 +2,25 @@ nav {
   z-index: 999;
   background: white;
   .active {
-    color: var(--primary-red);
+    color: var(--primary-red) !important;
     font-weight: 600;
   }
 }
 
-.nav-devider {
+.nav-divider {
   width: 1px;
   height: 20px;
   background: lightgray;
   @media (max-width: 992px) {
+    display: none;
+  }
+}
+.nav-divider-horizontal {
+  width: 100%;
+  height: 1px;
+  margin-top: 1rem;
+  background: lightgray;
+  @media (min-width: 992px) {
     display: none;
   }
 }
@@ -111,7 +120,7 @@ nav {
 
 .aboutus {
   padding-top: 6rem;
-  background: #d6525220;
+  background: #fdf3f3;
   .left {
     @media (min-width: 992px) {
       padding-bottom: 5rem;

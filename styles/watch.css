@@ -1,0 +1,20 @@
+.watch {
+  .curriculam {
+    max-height: 42rem;
+    border: 2px solid var(--light-gray);
+    overflow-y: scroll;
+
+    .accordion-button:not(.collapsed) {
+      background-color: #d3d3d341;
+    }
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+    .course-list {
+      border-top: 1px solid lightgray;
+      img {
+        width: 80px;
+      }
+    }
+  }
+}

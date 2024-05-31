@@ -1,22 +1,26 @@
 :root {
-  --primary-red: #ea2f2a;
+  --primary-red: #ea252c;
   --light-gray: #f7f7f7;
   --dark-gray: #4e4e4e;
   --success: #14cd8f;
-  --light-text: #76797f;
+  --warning: #f9c80e;
+  --light-text: #777980;
+  --dark-text: #4a4c56;
   --dark-bg: #1c1e2b;
 }
 
 html {
   font-size: 14px;
 }
-
 h1 {
   font-weight: bold;
 }
 
 .light-text {
   color: var(--light-text) !important;
+}
+.dark-text {
+  color: var(--dark-text) !important;
 }
 .wide-text {
   letter-spacing: 1px;
@@ -47,15 +51,32 @@ h1 {
 }
 .btn-cta {
   width: 100%;
-  @media (min-width: 767px) {
+  @media (min-width: 992px) {
     width: auto;
   }
+}
+.bg-transparent {
+  background: transparent !important;
 }
 .bg-lightgray {
   background-color: var(--light-gray);
 }
+.dark-bg {
+  background-color: var(--dark-bg);
+}
 .success-text {
   color: var(--success) !important;
+}
+.success-bg {
+  background-color: var(--success);
+  &:hover {
+    opacity: 80%;
+    background-color: var(--success);
+  }
+}
+.warning {
+  background: #f9c60e18;
+  border: 2px solid var(--warning);
 }
 .swiper-button-prev,
 .swiper-button-next {

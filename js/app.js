@@ -4,7 +4,8 @@ const reuseComponent = (path, domElementId) =>
     fetch(path)
       .then((response) => response.text())
       .then((data) => {
-        document.getElementById(domElementId).innerHTML = data
+        const target = document.getElementById(domElementId)
+        target && (target.innerHTML = data)
       })
   })
 
@@ -16,6 +17,32 @@ const isDesktop = window.innerWidth > 1200
 reuseComponent('../components/header.html', 'navbar-placeholder')
 reuseComponent('../components/footer.html', 'footer-placeholder')
 
+// setting the active path in the navbar
+document.addEventListener('DOMContentLoaded', function () {
+  var pathname = window.location.pathname
+  var page = pathname.split('/').pop()
+
+  if (!page) {
+    page = 'index.html'
+  }
+
+  var linkMap = {
+    'index.html': 'home',
+    'about-us.html': 'aboutus',
+    'admission.html': 'admission',
+    'all-courses.html': 'allcourse',
+    'others.html': 'others'
+  }
+
+  var linkId = linkMap[page]
+
+  if (linkId) {
+    var linkElement = document.getElementById(linkId)
+    if (linkElement) {
+      linkElement.classList.add('active')
+    }
+  }
+})
 document.getElementById('show-more')?.addEventListener('click', function () {
   var textContainer = document.getElementById('text-container')
 

@@ -1,8 +1,18 @@
 .course-details {
   position: relative;
   .top {
-    font-weight: 600;
-    font-size: 2rem;
+    padding-bottom: 12rem;
+    @media (min-width: 767px) {
+      padding-bottom: 18rem;
+    }
+    @media (min-width: 992px) {
+      padding-bottom: 0;
+    }
+
+    .top-title {
+      font-weight: 600;
+      font-size: 2rem;
+    }
   }
   .teacher {
     width: 40px;
@@ -14,9 +24,14 @@
   }
   .card {
     position: relative;
-    margin-top: 2rem;
+    top: -19rem;
     @media (min-width: 992px) {
       top: -16rem;
+    }
+  }
+  .video {
+    margin-top: -10rem;
+    @media (min-width: 992px) {
       margin-top: 0;
     }
   }

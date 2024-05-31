@@ -31,9 +31,147 @@
   </head>
   <body>
     <!-- Nav bar -->
-    <div id="navbar-placeholder"></div>
+    <div
+      class="container-fluid shadow-sm"
+      style="height: 90px"
+    >
+      <nav class="navbar navbar-expand-lg pt-4 pt-lg-2">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="/"
+          >
+            <img
+              src="/assets/logo.png"
+              alt="logo"
+              width="140px"
+              height="40px"
+          /></a>
+          <button
+            class="navbar-toggler bg-lightgray rounded-5 p-2"
+            style="font-size: 1rem"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNavDropdown"
+          >
+            <a
+              href="/dashboard/my-account.html"
+              class="btn btn-cta primary-bg text-white my-4 d-lg-none mt-5"
+              >লগইন</a
+            >
+            <a
+              href="#"
+              class="btn btn-cta btn-outline text-white d-lg-none"
+            >
+              নতুন একাউন্ট
+            </a>
+            <ul class="navbar-nav ms-auto me-auto gap-4 px-4 px-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link primary-hover"
+                  href="/"
+                  id="home"
+                  >হোম</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link primary-hover"
+                  href="#"
+                  id="aboutus"
+                  >আমাদের সম্পর্কে</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link primary-hover"
+                  href="#"
+                  id="admission"
+                  >ভর্তি</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link primary-hover"
+                  href="all-courses.html"
+                  id="allcourse"
+                  >কোর্স সমূহ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link primary-hover"
+                  href="#"
+                  id="others"
+                  >অন্যান্য</a
+                >
+              </li>
+            </ul>
+            <div class="nav-divider-horizontal"></div>
+            <div class="d-lg-flex align-items-center gap-3">
+              <div
+                class="nav-item dropdown mt-4 mt-lg-0 px-4 mb-5 mb-lg-0 px-lg-0"
+              >
+                <a
+                  class="nav-link dropdown-toggle d-flex align-items-center justify-content-between"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  En
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      >Bn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      >En</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-divider"></div>
+              <a
+                href="/dashboard/my-account.html"
+                class="btn btn-cta primary-bg text-white my-4 d-none d-lg-block"
+                >লগইন</a
+              >
+              <a
+                href="#"
+                class="btn btn-cta btn-outline text-white d-none d-lg-block"
+              >
+                নতুন একাউন্ট
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-    <!-- Home carousel -->
+    <!-- Hero carousel -->
     <div
       id="carouselExample"
       class="carousel slide"
@@ -94,7 +232,7 @@
             class="border border-light-subtle rounded-2 p-2 py-xl-4 d-flex flex-column align-items-center"
           >
             <img
-              src="/assets/video.png"
+              src="/assets/video.svg"
               alt="service"
             />
             <h1>১৫০০+</h1>
@@ -106,7 +244,7 @@
             class="border border-light-subtle rounded-2 p-2 py-xl-4 d-flex flex-column align-items-center"
           >
             <img
-              src="/assets/content.png"
+              src="/assets/content.svg"
               alt="service"
             />
             <h1>৫০০০+</h1>
@@ -118,7 +256,7 @@
             class="border border-light-subtle rounded-2 p-2 py-xl-4 d-flex flex-column align-items-center"
           >
             <img
-              src="/assets/note.png"
+              src="/assets/note.svg"
               alt="service"
             />
             <h1>২০০০+</h1>
@@ -130,7 +268,7 @@
             class="border border-light-subtle rounded-2 p-2 py-xl-4 d-flex flex-column align-items-center"
           >
             <img
-              src="/assets/quize.png"
+              src="/assets/quize.svg"
               alt="service"
             />
             <h1>২০০+</h1>
@@ -147,7 +285,7 @@
         <div class="center"></div>
       </div>
 
-      <div class="mt-5 bg-light p-4 rounded-4">
+      <div class="mt-5 bg-lightgray p-4 rounded-4">
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -1316,9 +1454,11 @@
       class="mt-5"
       id="footer-placeholder"
     ></div>
+
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/app.js"></script>
+    <script src="/js/swiper.js"></script>
   </body>
 </html>
