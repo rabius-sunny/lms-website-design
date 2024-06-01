@@ -1,9 +1,13 @@
 .dashboard {
   margin-top: 5rem;
+  @media (max-width: 992px) {
+    margin-top: 2rem;
+  }
   img {
     width: 100%;
   }
   .sidebar {
+    height: 100vh;
     img {
       width: 80px;
       height: 80px;
@@ -13,10 +17,10 @@
       text-decoration: none;
       font-weight: 600;
       padding: 1rem 1.2rem;
-      color: black;
-      border-top: 1.5px solid lightgray;
+      color: #000;
+      border-top: 1.5px solid var(--gray);
       &:hover {
-        background-color: white;
+        background-color: #fff;
       }
       img {
         width: 50px;
@@ -25,6 +29,31 @@
         margin-right: 0.6rem;
       }
     }
+    .inside-button {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+  }
+
+  .toggle-active {
+    z-index: 999;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+  }
+  @media (max-width: 992px) {
+    #sidebar {
+      transition: left 0.3s ease;
+      z-index: 999;
+      max-width: 80%;
+      position: fixed;
+      top: 0;
+      left: -80%;
+    }
+  }
+  .sidebar-visible {
+    left: -10px !important;
   }
   .thumbnail {
     height: 100%;
@@ -62,7 +91,7 @@
       th {
         padding: 1rem 0 1rem 0.5rem !important;
         background: #000 !important;
-        color: white;
+        color: #fff;
       }
     }
     tbody {

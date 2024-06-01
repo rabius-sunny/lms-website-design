@@ -1,4 +1,4 @@
-// re-usable component fetching
+// Re-usable component fetching
 const reuseComponent = (path, domElementId) =>
   document.addEventListener('DOMContentLoaded', function () {
     fetch(path)
@@ -9,7 +9,7 @@ const reuseComponent = (path, domElementId) =>
       })
   })
 
-// screen break points
+// Screen break points
 const isMobile = window.innerWidth <= 572
 const isTablet = window.innerWidth > 572 && window.innerWidth <= 1200
 const isDesktop = window.innerWidth > 1200
@@ -17,7 +17,7 @@ const isDesktop = window.innerWidth > 1200
 reuseComponent('../components/header.html', 'navbar-placeholder')
 reuseComponent('../components/footer.html', 'footer-placeholder')
 
-// setting the active path in the navbar
+// Setting the active path in the navbar
 document.addEventListener('DOMContentLoaded', function () {
   var pathname = window.location.pathname
   var page = pathname.split('/').pop()
@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 })
+
+// Toggling show more button
 document.getElementById('show-more')?.addEventListener('click', function () {
   var textContainer = document.getElementById('text-container')
 
@@ -64,5 +66,20 @@ document.getElementById('show-more')?.addEventListener('click', function () {
     Show More
     <i class="bi bi-chevron-up"></i>
   </div>`
+  }
+})
+
+// Handling sidebar of dashboard
+const sidebarToggler = document.getElementById('toggleSidebar')
+sidebarToggler?.addEventListener('click', function () {
+  const sidebar = document.getElementById('sidebar')
+  if (sidebar.classList.contains('sidebar-visible')) {
+    sidebar.classList.remove('sidebar-visible')
+    sidebarToggler.innerHTML = '<i class="bi bi-text-indent-left fs-3"></i>'
+    sidebarToggler.classList.remove('toggle-active')
+  } else {
+    sidebar.classList.add('sidebar-visible')
+    sidebarToggler.innerHTML = 'X'
+    sidebarToggler.classList.add('toggle-active')
   }
 })

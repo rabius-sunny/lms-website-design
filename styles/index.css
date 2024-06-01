@@ -1,6 +1,7 @@
 :root {
   --primary-red: #ea252c;
   --light-gray: #f7f7f7;
+  --gray: lightgray;
   --dark-gray: #4e4e4e;
   --success: #14cd8f;
   --warning: #f9c80e;
@@ -118,6 +119,6 @@ select {
   width: 100%;
   padding: 0.5rem;
   border-radius: 5px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--gray);
   margin-bottom: 1rem;
 }

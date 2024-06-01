@@ -11,10 +11,16 @@
       box-shadow: none;
     }
     .course-list {
-      border-top: 1px solid lightgray;
+      border-top: 1px solid var(--gray);
       img {
         width: 80px;
       }
+    }
+  }
+  .video {
+    min-height: 20rem;
+    @media (min-width: 992px) {
+      min-height: 40rem;
     }
   }
 }
